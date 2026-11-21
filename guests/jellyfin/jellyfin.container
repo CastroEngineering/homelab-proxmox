@@ -14,17 +14,9 @@ Volume=%h/media:/media:ro
 
 [Service]
 Restart=always
-Restart=always
 
 [Install]
 WantedBy=default.targetAutoUpdate=registry
-PublishPort=8096:8096
-Volume=%h/jellyfin/config:/config
-Volume=%h/jellyfin/cache:/cache
-Volume=%h/media:/media:ro
-
-[Service]
-Restart=always
 
 [Install]
 WantedBy=default.target
